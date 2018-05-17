@@ -1,0 +1,14 @@
+{
+    "name": "Apink/payment",
+    "description": "Unicompay",
+    "keywords": ["Unicompay"],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Apink\\Payment\\": "src/"
+        }
+    }
+}
