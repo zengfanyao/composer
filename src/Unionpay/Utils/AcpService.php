@@ -103,6 +103,7 @@ eot;
     //验证签名
     static function validate($params,$certDir)
     {
+        file_put_contents("/usr/local/nginx/html/union.txt",json_encode('validate'),FILE_APPEND);
         //公钥
         $public_key = CertUtil::getVerifyCertByCertId($params['certId'],$certDir);
         //签名串

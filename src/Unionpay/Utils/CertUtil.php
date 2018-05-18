@@ -104,12 +104,15 @@ class CertUtil
         closedir($handle);
     }
     public static function getVerifyCertByCertId($certId,$certDir=''){
+        file_put_contents("/usr/local/nginx/html/union.txt",json_encode('getVerifyCertByCertId'),FILE_APPEND);
         if(count(CertUtil::$verifyCerts) == 0){
             self::initVerifyCerts($certDir);
         }
         if(count(CertUtil::$verifyCerts) == 0){
             throw new \Exception("未读取到任何证书……");
         }
+        file_put_contents("/usr/local/nginx/html/union.txt",json_encode('$certId--'.$certId),FILE_APPEND);
+        file_put_contents("/usr/local/nginx/html/union.txt",json_encode(CertUtil::$verifyCerts),FILE_APPEND);
         if(array_key_exists($certId, CertUtil::$verifyCerts)){
             return CertUtil::$verifyCerts[$certId]->key;
         } else {
