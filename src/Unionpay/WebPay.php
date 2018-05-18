@@ -9,23 +9,18 @@
 namespace Apink\Payment\Unionpay;
 
 
+use Apink\Payment\Unionpay\Utils\Urls;
+
 class WebPay extends BasePay
 {
     /**
      * WebPay constructor.
      */
-    public $debug=true;
     public function __construct($config)
     {
         parent::__construct($config);
-        //判断是否测试环境
-        if($this->debug){
-            $this->transUrl = 'https://gateway.test.95516.com/gateway/api/frontTransReq.do';
-        }
-        else{
-            $this->transUrl = 'https://gateway.95516.com/gateway/api/frontTransReq.do';
-        }
     }
+
     /**
      * 执行
      * @param $params
@@ -36,4 +31,21 @@ class WebPay extends BasePay
     {
         return $this->consume();
     }
+
+    /**
+     * @return array|mixed|null
+     * 单笔消费查询
+     */
+    public function queryHandle()
+    {
+        return $this->query();
+    }
+
+    /**
+     * 验证签名
+     */
+    public function verify($params){
+        return $this->validateSign($params);
+    }
+
 }
