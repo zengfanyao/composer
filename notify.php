@@ -7,7 +7,7 @@
  */
 
 require __DIR__ . '/vendor/autoload.php';
-if (empty($_POST) || empty($_GET)) {
+if (empty($_POST) && empty($_GET)) {
     return false;
 }
 $get_params = array(
