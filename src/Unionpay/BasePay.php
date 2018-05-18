@@ -77,7 +77,7 @@ class BasePay extends BaseUnionpay
     //应答报文验证
     public function validateSign($result_arr)
     {
-        $isSuccess = AcpService::validate($result_arr, $this->config['certPath'], $this->config['certPwd']);
+        $isSuccess = AcpService::validate($result_arr,$this->config['certDir']);
         if (!$isSuccess) return false;
         //判断交易状态   判断respCode=00或A6即可认为交易成功
         if (empty($data['respCode']) || !in_array($data['respCode'], ['00', 'A6'])) {

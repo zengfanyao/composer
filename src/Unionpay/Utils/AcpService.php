@@ -101,11 +101,10 @@ eot;
     }
 
     //验证签名
-    static function validate($params, $cert_path, $cert_pwd)
+    static function validate($params,$certDir)
     {
-//        $params ['certId'] = CertUtil::getSignCertIdFromPfx($cert_path, $cert_pwd); //证书ID
         //公钥
-        $public_key = CertUtil::getVerifyCertByCertId($params['certId']);
+        $public_key = CertUtil::getVerifyCertByCertId($params['certId'],$certDir);
         //签名串
         $signature_str = $params ['signature'];
         unset($params['signature']);

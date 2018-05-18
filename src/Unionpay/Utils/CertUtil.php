@@ -91,7 +91,7 @@ class CertUtil
             if (pathinfo($file, PATHINFO_EXTENSION) == 'cer') {
                 $x509data = file_get_contents($filePath);
                 if ($x509data === false) {
-                    continue;
+                    throw new \Exception("$filePath". "读取失败");
                 }
                 $cert = new Cert();
                 openssl_x509_read($x509data);
@@ -103,9 +103,9 @@ class CertUtil
         }
         closedir($handle);
     }
-    public static function getVerifyCertByCertId($certId){
+    public static function getVerifyCertByCertId($certId,$certDir=''){
         if(count(CertUtil::$verifyCerts) == 0){
-            self::initVerifyCerts();
+            self::initVerifyCerts($certDir);
         }
         if(count(CertUtil::$verifyCerts) == 0){
             throw new \Exception("未读取到任何证书……");
