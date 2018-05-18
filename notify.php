@@ -25,5 +25,6 @@ try{
 }
 
 file_put_contents("/usr/local/nginx/html/union.txt",json_encode('success'),FILE_APPEND);
+$webPay->returnSuccess();
 
 
