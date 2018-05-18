@@ -17,9 +17,13 @@ class AcpService
      * @param $cert_pwd
      * 请求要素
      */
-        static function sign(&$params,$cert_path,$cert_pwd){
+        static function sign(&$params){
+            $cert_path = $params['certPath'];
+            $cert_pwd = $params['certPwd'];
             $params ['certId'] = CertUtil::getSignCertIdFromPfx($cert_path, $cert_pwd); //证书ID
             if (isset($params['signature'])) unset($params['signature']);
+            if (isset($params['certPath'])) unset($params['certPath']);
+            if (isset($params['certPwd'])) unset($params['certPwd']);
             //转换成key=val&字符串
             $params_str = self::createLinkString($params,true,false);
             $params_sha1x16 = sha1 ( $params_str, FALSE );

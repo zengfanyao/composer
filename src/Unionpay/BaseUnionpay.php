@@ -13,19 +13,16 @@ class BaseUnionpay
 {
     public $config =[];
     public function __construct($config=[]){
-//        if (empty($config['mer_id'])){
-//            throw new Exception("缺少配置mer_id");
-//        }
-//        if (empty($config['private_key_path'])) {
-//            throw new Exception('缺少配置private_key_path');
-//        }
-//        if (empty($config['private_key_pwd'])) {
-//            throw new Exception('缺少配置private_key_pwd');
-//        }
-//        if (empty($config['cert_dir'])) {
-//            throw new Exception('缺少配置cert_dir');
-//        }
-//        $this->config = $config;
+        if (empty($config['merId'])){
+            throw new Exception("缺少配置merId");
+        }
+        if (empty($config['certPath'])) {
+            throw new Exception('缺少配置certPath');
+        }
+        if (empty($config['certPwd'])) {
+            throw new Exception('缺少配置certPwd');
+        }
+        $this->config = $config;
     }
 
     /**
