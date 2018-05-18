@@ -8,8 +8,7 @@
 
 require  __DIR__.'/vendor/autoload.php';
 
-
-
+//下单
 $get_params =array(
     'merId' =>'777290058112538',
     'orderId' => date('YmdHis'),
@@ -17,7 +16,7 @@ $get_params =array(
     'txnAmt' => '1000',
     'certPath' =>'/opt/acp_test_sign.pfx',
     'certPwd' => '000000',
-    'frontUrl' =>'https://www.baidu.com',
+    'frontUrl' =>'https://www.apinktara.cn',
     'backUrl' => 'http://www.apinktara.cn/index.php',
 );
 $webPay = new \Apink\Payment\Unionpay\WebPay($get_params);
