@@ -103,7 +103,7 @@ eot;
     //验证签名
     static function validate($params, $cert_path, $cert_pwd)
     {
-        $params ['certId'] = CertUtil::getSignCertIdFromPfx($cert_path, $cert_pwd); //证书ID
+//        $params ['certId'] = CertUtil::getSignCertIdFromPfx($cert_path, $cert_pwd); //证书ID
         //公钥
         $public_key = CertUtil::getVerifyCertByCertId($params['certId']);
         //签名串

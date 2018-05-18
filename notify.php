@@ -17,7 +17,13 @@ $get_params = array(
 );
 $data = $_POST;
 $webPay = new \Apink\Payment\Unionpay\WebPay($get_params);
-$res = $webPay->verify($data);
-file_put_contents("/usr/local/nginx/html/union.txt",json_encode($res),FILE_APPEND);
+try{
+    $res = $webPay->verify($data);
+}catch (\Exception $exception){
+    file_put_contents("/usr/local/nginx/html/union.txt",json_encode('failure'),FILE_APPEND);
+    file_put_contents("/usr/local/nginx/html/union.txt",json_encode($exception->getMessage()),FILE_APPEND);
+}
+
+file_put_contents("/usr/local/nginx/html/union.txt",json_encode('success'),FILE_APPEND);
 
 
