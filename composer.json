@@ -4,6 +4,7 @@
     "keywords": ["Unicompay"],
     "license": "MIT",
     "require": {
+        "phoenixg/omnipay-pingpp": "^1.0",
         "php": ">=7.0"
     },
     "autoload": {

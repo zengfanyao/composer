@@ -7,7 +7,11 @@
  */
 
 namespace Apink\Payment\Unionpay\Utils;
-
+/**
+ * Class AcpService
+ * @package Apink\Payment\Unionpay\Utils
+ * 签名算法
+ */
 
 class AcpService
 {
@@ -15,7 +19,7 @@ class AcpService
      * @param $params
      * @param $cert_path
      * @param $cert_pwd
-     * 请求要素
+     * 请求要素 (网管签名)
      */
     static function sign(&$params)
     {

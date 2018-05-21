@@ -70,7 +70,7 @@ class CertUtil
         return CertUtil::$encryptCerts[$cert_path]->certId;
     }
 
-    public static function getEncryptKey($cert_path = SDK_ENCRYPT_CERT_PATH)
+    public static function getEncryptKey($cert_path = null)
     {
         if (!array_key_exists($cert_path, CertUtil::$encryptCerts)) {
             self::initEncryptCert($cert_path);
