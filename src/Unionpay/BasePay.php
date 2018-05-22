@@ -48,7 +48,7 @@ class BasePay extends BaseUnionpay
     /**
      * @param array $get_params
      * @param bool $is_app
-     * 消费接口
+     * 消费接口(网关支付)
      */
     public function consume()
     {

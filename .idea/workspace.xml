@@ -1,26 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/Unionpay/CompanyPay/CompanyPay.php" line="133" mnemonic="4" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9281bb3b-757f-4a66-8def-518824e368a1" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Unionpay/TokenPay/SDKConfig.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Unionpay/TokenPay/TokenPay.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Unionpay/TokenPay/sdk.ini" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Unionpay/Utils/TokenSign/Sign.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/Unicompay.iml" afterPath="$PROJECT_DIR$/.idea/Unicompay.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change beforePath="$PROJECT_DIR$/notify.php" afterPath="$PROJECT_DIR$/notify.php" />
+      <change beforePath="$PROJECT_DIR$/src/Unionpay/BasePay.php" afterPath="$PROJECT_DIR$/src/Unionpay/BasePay.php" />
+      <change beforePath="$PROJECT_DIR$/src/Unionpay/TokenPay/TokenPay.php" afterPath="$PROJECT_DIR$/src/Unionpay/TokenPay/TokenPay.php" />
+      <change beforePath="$PROJECT_DIR$/src/Unionpay/TokenPay/sdk.ini" afterPath="$PROJECT_DIR$/src/Unionpay/TokenPay/sdk.ini" />
       <change beforePath="$PROJECT_DIR$/src/Unionpay/Utils/AcpService.php" afterPath="$PROJECT_DIR$/src/Unionpay/Utils/AcpService.php" />
       <change beforePath="$PROJECT_DIR$/src/Unionpay/Utils/CertUtil.php" afterPath="$PROJECT_DIR$/src/Unionpay/Utils/CertUtil.php" />
       <change beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,12 +25,22 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Common.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Unionpay/Utils/Common.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="41" column="31" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="31" />
+            <state relative-caret-position="120">
+              <caret line="65" column="29" lean-forward="false" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CertUtil.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Unionpay/Utils/CertUtil.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="70">
+              <caret line="109" column="27" lean-forward="false" selection-start-line="109" selection-start-column="27" selection-end-line="109" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -47,9 +49,42 @@
       <file leaf-file-name="notify.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notify.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="12" column="89" lean-forward="false" selection-start-line="12" selection-start-column="89" selection-end-line="12" selection-end-column="89" />
+            <state relative-caret-position="398">
+              <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="json.php" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/json/json.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="132" column="9" lean-forward="false" selection-start-line="132" selection-start-column="9" selection-end-line="132" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sdk.ini" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Unionpay/TokenPay/sdk.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="38" column="67" lean-forward="true" selection-start-line="38" selection-start-column="67" selection-end-line="38" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompanyPay.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Unionpay/CompanyPay/CompanyPay.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="135" column="13" lean-forward="false" selection-start-line="135" selection-start-column="13" selection-end-line="135" selection-end-column="13" />
+              <folding>
+                <element signature="e#133#179#0#PHP" expanded="true" />
+                <element signature="e#806#2002#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,6 +96,11 @@
       <find>initVerifyCerts</find>
       <find>signByCertInfo</find>
       <find>version</find>
+      <find>post</find>
+      <find>query</find>
+      <find>vali</find>
+      <find>getVerifyCertByCertId</find>
+      <find>sign</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -78,17 +118,22 @@
         <option value="$PROJECT_DIR$/src/Unionpay/Utils/Urls.php" />
         <option value="$PROJECT_DIR$/src/Unionpay/BaseUnionpay.php" />
         <option value="$PROJECT_DIR$/src/Unionpay/WebPay.php" />
-        <option value="$PROJECT_DIR$/src/Unionpay/BasePay.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/Unionpay/TokenPay.php" />
-        <option value="$PROJECT_DIR$/src/Unionpay/TokenPay/sdk.ini" />
-        <option value="$PROJECT_DIR$/src/Unionpay/Utils/AcpService.php" />
-        <option value="$PROJECT_DIR$/notify.php" />
         <option value="$PROJECT_DIR$/src/Unionpay/TokenPay/SDKConfig.php" />
-        <option value="$PROJECT_DIR$/src/Unionpay/Utils/CertUtil.php" />
         <option value="$PROJECT_DIR$/src/Unionpay/Utils/TokenSign/Sign.php" />
+        <option value="$PROJECT_DIR$/src/Unionpay/BasePay.php" />
+        <option value="$PROJECT_DIR$/src/Unionpay/Utils/AcpService.php" />
         <option value="$PROJECT_DIR$/src/Unionpay/TokenPay/TokenPay.php" />
+        <option value="$PROJECT_DIR$/src/Unionpay/TokenBasePay.php" />
+        <option value="$PROJECT_DIR$/src/Unionpay/Utils/CompanyPay/Sign.php" />
+        <option value="$PROJECT_DIR$/src/Unionpay/Utils/CompanyPay/CompanySign.php" />
+        <option value="$PROJECT_DIR$/src/Unionpay/CompanyPay/CompanySign.php" />
         <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/src/Unionpay/Utils/CertUtil.php" />
+        <option value="$PROJECT_DIR$/src/Unionpay/TokenPay/sdk.ini" />
+        <option value="$PROJECT_DIR$/src/Unionpay/CompanyPay/CompanyPay.php" />
+        <option value="$PROJECT_DIR$/notify.php" />
       </list>
     </option>
   </component>
@@ -132,8 +177,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,12 +200,28 @@
               <item name="Unicompay" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Unionpay" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="CompanyPay" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Unicompay" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Unicompay" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Unionpay" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="TokenPay" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Unicompay" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Unicompay" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Unionpay" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Utils" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -196,18 +255,19 @@
       <option name="presentableId" value="Default" />
       <updated>1526538035757</updated>
       <workItem from="1526538036900" duration="31154000" />
-      <workItem from="1526864135529" duration="18835000" />
+      <workItem from="1526864135529" duration="36581000" />
+      <workItem from="1526968330227" duration="3873000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49989000" />
+    <option name="totallyTimeSpent" value="71608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25452608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08146965" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -215,7 +275,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26415095" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3207547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -226,6 +286,26 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2611718" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26943558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -234,49 +314,60 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/notify.php</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SayHello.php" />
-    <entry file="file://$PROJECT_DIR$/src/Unionpay/Utils/Rsa.php" />
-    <entry file="file://$PROJECT_DIR$/src/Unionpay/Utils/Cert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Unionpay/Utils/CertSerialUtil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Unionpay/Utils/Common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="65" column="29" lean-forward="true" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Unionpay/WebPay.php">
+    <entry file="file://$PROJECT_DIR$/src/Unionpay/Utils/CertUtil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+        <state relative-caret-position="3536">
+          <caret line="109" column="27" lean-forward="false" selection-start-line="109" selection-start-column="27" selection-end-line="109" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/notify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Unionpay/CompanyPay/CompanyPay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3094">
+          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <folding>
+            <element signature="e#133#179#0#PHP" expanded="true" />
+            <element signature="e#806#2002#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SayHello.php" />
+    <entry file="file://$PROJECT_DIR$/src/Unionpay/Utils/Rsa.php" />
     <entry file="file://$PROJECT_DIR$/vendor/omnipay/common/tests/Omnipay/Common/HelperTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -284,7 +375,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -293,7 +383,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="299">
             <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -303,7 +392,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -311,7 +399,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -319,15 +406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Unionpay/BasePay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -335,7 +413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -347,88 +424,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Unionpay/TokenPay.php">
+    <entry file="file://$PROJECT_DIR$/src/Unionpay/TokenPay.php" />
+    <entry file="file://$PROJECT_DIR$/src/Unionpay/Utils/Cert.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="374">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Unionpay/Utils/CertSerialUtil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Unionpay/BasePay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="45" column="6" lean-forward="true" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Unionpay/WebPay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Unionpay/CompanyPay/CompanyPay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#133#179#0#PHP" expanded="true" />
+            <element signature="e#806#2002#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Unionpay/TokenPay/SDKConfig.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="97" column="25" lean-forward="false" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
+        <state relative-caret-position="430">
+          <caret line="82" column="42" lean-forward="false" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Unionpay/Utils/TokenSign/Sign.php">
+    <entry file="file://$PROJECT_DIR$/src/Unionpay/TokenBasePay.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="407">
+          <caret line="57" column="49" lean-forward="true" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Unionpay/TokenPay/TokenPay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="96" column="5" lean-forward="true" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
           <folding>
-            <element signature="e#137#183#0#PHP" expanded="false" />
+            <marker date="1526900243000" expanded="true" signature="2431:2470" ph="..." />
+            <marker date="1526900243000" expanded="true" signature="2546:2774" ph="..." />
+            <marker date="1526900243000" expanded="true" signature="2553:2643" ph="..." />
+            <marker date="1526900243000" expanded="true" signature="2698:2774" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Unionpay/Utils/AcpService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="129" column="13" lean-forward="true" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
+        <state relative-caret-position="279">
+          <caret line="135" column="9" lean-forward="true" selection-start-line="135" selection-start-column="9" selection-end-line="135" selection-end-column="9" />
           <folding>
-            <marker date="1526866863000" expanded="true" signature="2781:2820" ph="..." />
-            <marker date="1526866863000" expanded="true" signature="2896:3124" ph="..." />
-            <marker date="1526866863000" expanded="true" signature="2903:2993" ph="..." />
-            <marker date="1526866863000" expanded="true" signature="3048:3124" ph="..." />
+            <marker date="1526895079000" expanded="true" signature="2781:2820" ph="..." />
+            <marker date="1526895079000" expanded="true" signature="2896:3124" ph="..." />
+            <marker date="1526895079000" expanded="true" signature="2903:2993" ph="..." />
+            <marker date="1526895079000" expanded="true" signature="3048:3124" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Unionpay/Utils/CertUtil.php">
+    <entry file="file://$PROJECT_DIR$/src/Unionpay/Utils/TokenSign/Sign.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="529">
+          <caret line="70" column="46" lean-forward="false" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Unionpay/TokenPay/TokenPay.php">
+    <entry file="file://$PROJECT_DIR$/src/Unionpay/Utils/CompanyPay/CompanySign.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="e#130#174#0#PHP" expanded="false" />
-            <marker date="1526886927000" expanded="true" signature="2008:2047" ph="..." />
-            <marker date="1526886927000" expanded="true" signature="2123:2351" ph="..." />
-            <marker date="1526886927000" expanded="true" signature="2123:2616" ph="..." />
-            <marker date="1526886927000" expanded="true" signature="2130:2220" ph="..." />
-            <marker date="1526886927000" expanded="true" signature="2275:2351" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Unionpay/TokenPay/sdk.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="41" column="31" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="31" />
+        <state relative-caret-position="403">
+          <caret line="129" column="32" lean-forward="true" selection-start-line="129" selection-start-column="32" selection-end-line="129" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/json/json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="132" column="9" lean-forward="false" selection-start-line="132" selection-start-column="9" selection-end-line="132" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Unionpay/CompanyPay/CompanyPay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="135" column="13" lean-forward="false" selection-start-line="135" selection-start-column="13" selection-end-line="135" selection-end-column="13" />
+          <folding>
+            <element signature="e#133#179#0#PHP" expanded="true" />
+            <element signature="e#806#2002#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Unionpay/TokenPay/sdk.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="38" column="67" lean-forward="true" selection-start-line="38" selection-start-column="67" selection-end-line="38" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Unionpay/Utils/CertUtil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="109" column="27" lean-forward="false" selection-start-line="109" selection-start-column="27" selection-end-line="109" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Unionpay/Utils/Common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="65" column="29" lean-forward="false" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notify.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="12" column="89" lean-forward="false" selection-start-line="12" selection-start-column="89" selection-end-line="12" selection-end-column="89" />
+        <state relative-caret-position="398">
+          <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
           <folding />
         </state>
       </provider>

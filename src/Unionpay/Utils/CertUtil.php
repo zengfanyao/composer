@@ -9,11 +9,14 @@
 namespace Apink\Payment\Unionpay\Utils;
 
 
+use Apink\Payment\Unionpay\TokenPay\SDKConfig;
+const COMPANY = "中国银联股份有限公司";
 class CertUtil
 {
     private static $signCerts = array();
     private static $encryptCerts = array();
     private static $verifyCerts = array();
+    private static $verifyCerts510 = array();
 
     private static function initSignCert($certPath, $certPwd)
     {
@@ -41,7 +44,7 @@ class CertUtil
 
     public static function getSignCertIdFromPfx($certPath, $certPwd)
     {
-        if (!array_key_exists($certPath, CertUtil::$signCerts)) {
+        if (!array_key_exists($certPath, CertUtil::$verifyCerts510)) {
             self::initSignCert($certPath, $certPwd);
         }
         return CertUtil::$signCerts[$certPath]->certId;
@@ -91,7 +94,7 @@ class CertUtil
             if (pathinfo($file, PATHINFO_EXTENSION) == 'cer') {
                 $x509data = file_get_contents($filePath);
                 if ($x509data === false) {
-                    throw new \Exception("$filePath". "读取失败");
+                    throw new \Exception("$filePath" . "读取失败");
                 }
                 $cert = new Cert();
                 openssl_x509_read($x509data);
@@ -103,31 +106,83 @@ class CertUtil
         }
         closedir($handle);
     }
-    public static function getVerifyCertByCertId($certId,$certDir=''){
-        file_put_contents("/usr/local/nginx/html/union.txt",json_encode('getVerifyCertByCertId'),FILE_APPEND);
-        if(count(CertUtil::$verifyCerts) == 0){
+
+    public static function getVerifyCertByCertId($certId, $certDir = '')
+    {
+//        file_put_contents("/usr/local/nginx/html/union.txt",json_encode('getVerifyCertByCertId'),FILE_APPEND);
+        if (count(CertUtil::$verifyCerts) == 0) {
             self::initVerifyCerts($certDir);
         }
-        if(count(CertUtil::$verifyCerts) == 0){
+        if (count(CertUtil::$verifyCerts) == 0) {
             throw new \Exception("未读取到任何证书……");
         }
-        file_put_contents("/usr/local/nginx/html/union.txt",json_encode('$certId--'.$certId),FILE_APPEND);
-        file_put_contents("/usr/local/nginx/html/union.txt",json_encode(CertUtil::$verifyCerts),FILE_APPEND);
-        if(array_key_exists($certId, CertUtil::$verifyCerts)){
+//        file_put_contents("/usr/local/nginx/html/union.txt",json_encode('$certId--'.$certId),FILE_APPEND);
+//        file_put_contents("/usr/local/nginx/html/union.txt",json_encode(CertUtil::$verifyCerts),FILE_APPEND);
+        if (array_key_exists($certId, CertUtil::$verifyCerts)) {
             return CertUtil::$verifyCerts[$certId]->key;
         } else {
             throw new \Exception("未匹配到序列号为[" . certId . "]的证书");
         }
     }
-    public static function test() {
 
-        $x509data = file_get_contents ( "/Users/yao/Desktop/银联测试/生产环境证书/acp_prod_enc.cer");
+    public static function verifyAndGetVerifyCert($certBase64String)
+    {
+        if (array_key_exists($certBase64String, CertUtil::$verifyCerts510)) {
+            return CertUtil::$verifyCerts510[$certBase64String];
+        }
+        if (SDKConfig::getSDKConfig()->middleCertPath === null || SDKConfig::getSDKConfig()->rootCertPath === null) {
+            return null;
+        }
+        openssl_x509_read($certBase64String);
+        $certInfo = openssl_x509_parse($certBase64String);
+        $cn = CertUtil::getIdentitiesFromCertficate($certInfo);
+        if (strolower(SDKConfig::getSDKConfig()->ifValidateCNName) == "true") {
+            if (COMPANY != $cn) {
+                return null;
+            }
+        } else if (COMPANY != $cn && "00040000:SIGN" != $cn) {
+            return null;
+        }
+        $from = date_create('@' . $certInfo['validFrom_time_t']);
+        $to = date_create('@' . $certInfo['validTo_time_t']);
+        $now = date_create(date('Ymd'));
+        $interval1 = $from->diff($now);
+        $interval2 = $now->diff($to);
+        if ($interval1->invert || $interval2->invert){
+            return null;
+        }
+        $result =openssl_x509_checkpurpose($certBase64String,X509_PURPOSE_ANY,array(SDKConfig::getSDKConfig()->rootCertPath,SDKConfig::getSDKConfig()->middleCertPath));
+        if ($result===FALSE){
+            return null;
+        }else if ($result===TRUE){
+            CertUtil::$verifyCerts510[$certBase64String]=$certBase64String;
+            return CertUtil::$verifyCerts510[$certBase64String];
+        }else {
+            return null;
+        }
+    }
+
+    static function getIdentitiesFromCertficate($certInfo)
+    {
+        $cn = $certInfo['subject'];
+        $cn = $cn['CN'];
+        $company = explode('@', $cn);
+        if (count($company) < 3) {
+            return null;
+        }
+        return $company[2] ?? null;
+    }
+
+    public static function test()
+    {
+
+//        $x509data = file_get_contents ( "/Users/yao/Desktop/银联测试/生产环境证书/acp_prod_enc.cer");
 // 		$resource = openssl_x509_read ( $x509data );
         // $certdata = openssl_x509_parse ( $resource ); //<=这句尼玛内存泄漏啊根本释放不掉啊啊啊啊啊啊啊
         // echo $certdata ['serialNumber']; //<=就是需要这个数据啦
         // echo $x509data;
         // unset($certdata); //<=没有什么用
         // openssl_x509_free($resource); //<=没有什么用x2
-        echo CertSerialUtil::getSerial ( $x509data, $errMsg ) . "\n";
+//        echo CertSerialUtil::getSerial ( $x509data, $errMsg ) . "\n";
     }
 }

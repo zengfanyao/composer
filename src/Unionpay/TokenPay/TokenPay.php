@@ -57,6 +57,20 @@ class TokenPay
         return base64_encode("{" . AcpService::createLinkString($customerInfo, false, false) . "}");
     }
 
+    /**
+     * @param $params
+     * 验证是否成功
+     */
+    public static function validate($params,$cer){
+        $isSuccess =false;
+        if ($params['signMethod'] =='01'){
+            $signature_str = $params ['signature'];
+            unset($params['signature']);
+            if ($params['verison']=='5.0.0'){
+                $public_key =CertUtil::getVerifyCertByCertId($params['certId']);
+            }
+        }
+    }
     static function createAutoFormHtml($params, $reqUrl)
     {
         // <body onload="javascript:document.pay_form.submit();">
