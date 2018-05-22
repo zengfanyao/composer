@@ -133,10 +133,9 @@ class CertUtil
         if (SDKConfig::getSDKConfig()->middleCertPath === null || SDKConfig::getSDKConfig()->rootCertPath === null) {
             return null;
         }
-        openssl_x509_read($certBase64String);
         $certInfo = openssl_x509_parse($certBase64String);
         $cn = CertUtil::getIdentitiesFromCertficate($certInfo);
-        if (strolower(SDKConfig::getSDKConfig()->ifValidateCNName) == "true") {
+        if (strtolower(SDKConfig::getSDKConfig()->ifValidateCNName) == "true") {
             if (COMPANY != $cn) {
                 return null;
             }
